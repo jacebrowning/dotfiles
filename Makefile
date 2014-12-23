@@ -2,7 +2,8 @@ DOTFILE_NAMES := .zshrc
 
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DOTFILE_PATHS := $(DOTFILE_NAMES:%=$(ROOT_DIR)/%)
-BACKUP_DIR := $(ROOT_DIR)/.backup-$(shell date +"%s")
+BACKUP_PREFIX := $(ROOT_DIR)/.backup
+BACKUP_DIR := $(BACKUP_PREFIX)-$(shell date +"%s")
 FLAG_PATH := $(ROOT_DIR)/.flag
 
 .PHONY: all
@@ -24,4 +25,4 @@ clean:
 
 .PHONY: clean-all
 clean-all: clean
-	rm -rf $(BACKUP)
+	rm -rf $(BACKUP_PREFIX)*
