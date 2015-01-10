@@ -1,0 +1,40 @@
+[user]
+	name = Jace Browning
+	email = jacebrowning@gmail.com
+[core]
+	excludesfile = /opt/boxen/config/git/gitignore
+	mergeoptions = --no-ff
+  	editor = vim
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[diff]
+	tool = p4merge
+  	renames = true
+[merge]
+	tool = p4merge
+  	keepBackup = false
+[difftool "sourcetree"]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	trustExitCode = true
+[difftool "p4merge"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$REMOTE\"" "\"$LOCAL\""
+[mergetool "p4merge"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "\"$PWD/$BASE\"" "\"$PWD/$REMOTE\"" "\"$PWD/$LOCAL\"" "\"$PWD/$MERGED\""
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[credential]
+	helper = /opt/boxen/bin/boxen-git-credential
+[push]
+	default = simple
+[hub]
+	protocol = https
+[branch]
+  	autosetuprebase = always
+[rebase]
+  	autosquash = true
