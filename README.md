@@ -10,5 +10,6 @@ To apply future updates:
 
 ```
 $ cd ~/.dotfiles
+$ git pull
 $ make
 ```
