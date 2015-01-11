@@ -51,7 +51,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-PATH="bin:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/ruby-build/bin:node_modules/.bin:/opt/boxen/nodenv/shims:/opt/boxen/nodenv/bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 PATH="/opt/boxen/homebrew/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 PATH="/opt/boxen/homebrew/Cellar/python3/3.4.2_1/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
 export PATH
