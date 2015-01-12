@@ -83,4 +83,4 @@ export PATH
 
 unsetopt AUTO_CD
 
-source /opt/boxen/env.sh
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
