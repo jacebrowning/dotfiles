@@ -22,9 +22,10 @@ export PATH
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias ll="ls -al"
 
 source $ZSH/oh-my-zsh.sh
+
 unsetopt AUTO_CD
+alias ll="ls -alh"
 
 source /opt/boxen/env.sh
