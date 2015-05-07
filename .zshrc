@@ -14,9 +14,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # User configuration
-PATH="/opt/boxen/homebrew/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
-PATH="/opt/boxen/homebrew/Cellar/python3/3.4.3/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
-export PATH
+export PATH="/opt/boxen/homebrew/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
+export PATH="/opt/boxen/homebrew/Cellar/python3/3.4.3/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$PATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
