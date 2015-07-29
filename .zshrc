@@ -11,7 +11,16 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    heroku
+    postgres
+    brew
+    zsh_reload
+    osx
+    z
+    zsh-syntax-highlighting
+)
 
 # User configuration
 export PATH="/opt/boxen/homebrew/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
