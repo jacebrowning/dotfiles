@@ -36,5 +36,6 @@ source $ZSH/oh-my-zsh.sh
 
 unsetopt AUTO_CD
 alias ll="ls -alh"
+export EDITOR=subl
 
 source /opt/boxen/env.sh
