@@ -41,3 +41,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 RBENV_ROOT=/opt/boxen/rbenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 PYENV_ROOT=/opt/boxen/pyenv
+if which fuck > /dev/null; then eval "$(thefuck --alias)"; fi
