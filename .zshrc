@@ -31,6 +31,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # For a full list of active aliases, run `alias`.
 
 source $ZSH/oh-my-zsh.sh
+export _Z_NO_RESOLVE_SYMLINKS=true
 
 unsetopt AUTO_CD
 alias ll="ls -alh"
