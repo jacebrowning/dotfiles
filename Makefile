@@ -1,4 +1,4 @@
-DOTFILE_NAMES := .zshrc .gitconfig .gitignore_global
+DOTFILE_NAMES := .zshrc .gitconfig
 
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DOTFILE_PATHS := $(DOTFILE_NAMES:%=$(ROOT_DIR)/%)
