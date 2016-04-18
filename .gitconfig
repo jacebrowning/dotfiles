@@ -12,4 +12,9 @@
 	show = diff-so-fancy | less --tabs=4 -RFX
 
 [core]
-excludesfile = /opt/boxen/config/git/gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
+
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
