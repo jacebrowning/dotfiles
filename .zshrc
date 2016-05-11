@@ -35,6 +35,7 @@ export _Z_NO_RESOLVE_SYMLINKS=true
 
 unsetopt AUTO_CD
 alias ll="ls -alh"
+alias be="bundle exec"
 export EDITOR=vim
 
 source /opt/boxen/env.sh
