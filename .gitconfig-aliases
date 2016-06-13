@@ -1,0 +1,25 @@
+[alias]
+  s = status
+  st = status
+
+  co = checkout
+
+  p = pull
+  pl = pull
+  pul = pull
+  pulll = pull
+
+  pus = push
+  puhs = push
+
+  re = rebase
+  rebae = rebase
+
+  cbranch = rev-parse --abbrev-ref HEAD
+  pushr = !git push -u origin `git cbranch`
+
+  pullstash = !git add . && git stash && git pull
+  pullpop = !git add . && git stash && git pull && git stash pop
+
+  cleanlocalbranches = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|staging' | xargs -n 1 git branch -d"
+  clb = !git cleanlocalbranches

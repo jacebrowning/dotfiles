@@ -1,0 +1,20 @@
+[branch]
+  autosetuprebase = always
+[rebase]
+  autosquash = true
+[diff]
+  renames = true
+[core]
+  excludesfile = ~/.gitignore_global
+  mergeoptions = --no-ff
+  editor = vim
+[push]
+  default = simple
+[credential]
+  helper = osxkeychain
+[filter "media"]
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
+[remote "origin"]
+  prune = true

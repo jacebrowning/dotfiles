@@ -1,2 +1,4 @@
+# To be clear, this is the .gitignore for this directory
+
 .flag
 .backup*
