@@ -1,3 +1,7 @@
+# Load the default boxen environment.
+
+source /opt/boxen/env.sh
+
 # Path to your oh-my-zsh installation.
 
 export ZSH=$HOME/.oh-my-zsh
@@ -30,21 +34,22 @@ plugins=(
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-export _Z_NO_RESOLVE_SYMLINKS=true
-
-unsetopt AUTO_CD
-alias ll="ls -alh"
-alias be="bundle exec"
-export EDITOR=vim
-
-source /opt/boxen/env.sh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 RBENV_ROOT=/opt/boxen/rbenv
+
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 PYENV_ROOT=/opt/boxen/pyenv
+
 if which fuck > /dev/null; then eval "$(thefuck --alias)"; fi
 
 export PATH="/usr/local/heroku/bin:$PATH"
+export _Z_NO_RESOLVE_SYMLINKS=true
+export EDITOR=vim
+
+unsetopt AUTO_CD
+
+alias ll="ls -alh"
+alias be="bundle exec"
 
 # Finally, load oh-my-zsh.
 
