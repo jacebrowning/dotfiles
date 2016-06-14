@@ -1,25 +1,27 @@
+# Common shortcuts for commands
+
 [alias]
-  s = status
-  st = status
+	s = status
+	st = status
 
-  co = checkout
+	co = checkout
 
-  p = pull
-  pl = pull
-  pul = pull
-  pulll = pull
+	p = pull
+	pl = pull
+	pul = pull
+	pulll = pull
 
-  pus = push
-  puhs = push
+	pus = push
+	puhs = push
 
-  re = rebase
-  rebae = rebase
+	re = rebase
+	rebae = rebase
 
-  cbranch = rev-parse --abbrev-ref HEAD
-  pushr = !git push -u origin `git cbranch`
+	cbranch = rev-parse --abbrev-ref HEAD
+	pushr = !git push -u origin `git cbranch`
 
-  pullstash = !git add . && git stash && git pull
-  pullpop = !git add . && git stash && git pull && git stash pop
+	pullstash = !git add . && git stash && git pull
+	pullpop = !git add . && git stash && git pull && git stash pop
 
-  cleanlocalbranches = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|staging' | xargs -n 1 git branch -d"
-  clb = !git cleanlocalbranches
+	cleanlocalbranches = "!git branch --merged | grep	-v '\\*\\|master\\|develop\\|staging' | xargs -n 1 git branch -d"
+	clb = !git cleanlocalbranches

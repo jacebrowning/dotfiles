@@ -1,32 +1,8 @@
 [include]
-  path = ~/.gitconfig-core
-  path = ~/.gitconfig-aliases
-  path = ~/.gitconfig-diff
+	path = ~/.gitconfig-core
+	path = ~/.gitconfig-diff
+	path = ~/.gitconfig-aliases
 
 [user]
 	name = Jace Browning
 	email = jacebrowning@gmail.com
-
-[pager]
-	diff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
-
-[core]
-	excludesfile = /opt/boxen/config/git/gitignore
-
-[filter "lfs"]
-	smudge = git-lfs smudge %f
-	required = true
-	clean = git-lfs clean %f
-
-[hub]
-protocol = https
-
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
