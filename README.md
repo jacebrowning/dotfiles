@@ -3,8 +3,8 @@ To create symlinks for all dotfiles:
 ```
 $ git clone https://github.com/jacebrowning/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
-(change the name/email in .gitconfig)
-$ git commit -am "Change name/email"
+(change the name and email in .gitconfig)
+$ git commit -am "Update user information"
 $ make 
 ```
 
