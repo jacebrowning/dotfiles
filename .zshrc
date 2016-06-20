@@ -34,13 +34,15 @@ plugins=(
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
 RBENV_ROOT=/opt/boxen/rbenv
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+eval "$(pyenv init -)"
 PYENV_ROOT=/opt/boxen/pyenv
 
-if which fuck > /dev/null; then eval "$(thefuck --alias)"; fi
+eval "$(thefuck --alias)"
+
+eval "$(direnv hook zsh)"
 
 export PATH="/usr/local/heroku/bin:$PATH"
 export _Z_NO_RESOLVE_SYMLINKS=true
