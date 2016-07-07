@@ -50,7 +50,6 @@ export EDITOR=vim
 
 unsetopt AUTO_CD
 
-alias ll="ls -alh"
 alias be="bundle exec"
 
 # Finally, load oh-my-zsh.
