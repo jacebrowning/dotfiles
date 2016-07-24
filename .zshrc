@@ -21,11 +21,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     heroku
-    postgres
-    brew
     zsh_reload
-    osx
-    z
     zsh-syntax-highlighting
 )
 
