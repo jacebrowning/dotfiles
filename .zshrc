@@ -23,6 +23,7 @@ plugins=(
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
+eval "$(nodenv init -)"
 eval "$(thefuck --alias)"
 eval "$(direnv hook zsh)"
 
