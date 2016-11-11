@@ -27,6 +27,8 @@ eval "$(nodenv init -)"
 eval "$(thefuck --alias)"
 eval "$(direnv hook zsh)"
 
+PATH=$PATH:/usr/local/sbin
+
 
 # Program options
 
