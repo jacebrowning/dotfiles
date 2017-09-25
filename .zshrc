@@ -29,6 +29,9 @@ eval "$(direnv hook zsh)"
 
 PATH=$PATH:/usr/local/sbin
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
+export ANDROID_HOME=/usr/local/share/android-sdk
+
 
 # Program options
 
