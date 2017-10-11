@@ -46,6 +46,10 @@ unsetopt AUTO_CD
 
 alias be="bundle exec"
 
+alias dcu="docker-compose up -d"
+alias dcs="docker-compose stop"
+alias dcl="docker-compose logs -f --tail=100 web worker"
+
 
 # Load oh-my-zsh
 
