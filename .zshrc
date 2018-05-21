@@ -1,10 +1,7 @@
 ###############################################################################
-# Path to oh-my-zsh
+# Theme
 
 export ZSH=$HOME/.oh-my-zsh
-
-###############################################################################
-# Theme selection
 
 ZSH_THEME="robbyrussell"
 
@@ -41,6 +38,7 @@ export _Z_NO_RESOLVE_SYMLINKS=true
 export EDITOR=vim
 
 unsetopt AUTO_CD
+
 ###############################################################################
 # Custom aliases
 
