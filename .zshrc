@@ -51,6 +51,12 @@ alias dcl="docker-compose logs -f --tail=100 web worker"
 ###############################################################################
 # Load oh-my-zsh
 
+fpath+=~/.zfunc
+
 source $ZSH/oh-my-zsh.sh
+
+###############################################################################
+# Extra scripts
+
 source $HOME/.poetry/env
-source $HOME/Documents/zapier/shell-tools/scripts.sh
+source "/Users/Browning/Documents/zapier/shell-tools/scripts.sh"
