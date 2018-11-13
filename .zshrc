@@ -59,4 +59,4 @@ source $ZSH/oh-my-zsh.sh
 # Extra scripts
 
 source $HOME/.poetry/env
-source "/Users/Browning/Documents/zapier/shell-tools/scripts.sh"
+source $HOME/Documents/zapier/shell-tools/scripts.sh
