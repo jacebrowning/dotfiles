@@ -21,7 +21,6 @@ plugins=(
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
-eval "$(nodenv init -)"
 eval "$(thefuck --alias)"
 eval "$(direnv hook zsh)"
 
@@ -58,5 +57,12 @@ source $ZSH/oh-my-zsh.sh
 ###############################################################################
 # Extra scripts
 
-source $HOME/.poetry/env
 source $HOME/Documents/zapier/shell-tools/scripts.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # nvm bash_completion
+
+export PATH="${HOME}/.local/bin:${PATH}"  # pipx
+
+source $HOME/.poetry/env  # poetry

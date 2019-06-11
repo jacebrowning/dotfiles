@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "**/.flag": true,
+        "**/.backup*": true
+    }
+}
