@@ -5,7 +5,8 @@
 
 [user]
 	name = Jace Browning
-	email = jacebrowning@gmail.com
+	# email = jacebrowning@gmail.com
+	email = jace.browning@zapier.com
 
 [hub]
 	protocol = https
