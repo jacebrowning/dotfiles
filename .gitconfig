@@ -5,8 +5,10 @@
 
 [user]
 	name = Jace Browning
-	# email = jacebrowning@gmail.com
-	email = jace.browning@zapier.com
+	email = jacebrowning@gmail.com
+
+[init]
+	defaultBranch = main
 
 [hub]
 	protocol = https
