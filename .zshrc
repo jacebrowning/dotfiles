@@ -63,4 +63,4 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="${HOME}/.local/bin:${PATH}"  # pipx
 
-source $HOME/.poetry/env
+export PATH="${HOME}/.poetry/bin:${PATH}"  # poetry
