@@ -20,7 +20,7 @@ plugins=(
 # Custom paths
 
 eval "$(rbenv init -)"
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 eval "$(thefuck --alias)"
 eval "$(direnv hook zsh)"
 
