@@ -11,7 +11,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     heroku
-    zsh_reload
     zsh-syntax-highlighting
     z
 )
