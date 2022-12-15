@@ -18,8 +18,6 @@ plugins=(
 ###############################################################################
 # Custom paths
 
-eval "$(rbenv init -)"
-eval "$(pyenv init --path)"
 eval "$(thefuck --alias)"
 eval "$(direnv hook zsh)"
 
@@ -56,10 +54,7 @@ source $ZSH/oh-my-zsh.sh
 ###############################################################################
 # Extra scripts
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # nvm bash_completion
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 export PATH="${HOME}/.local/bin:${PATH}"  # pipx
-
 export PATH="${HOME}/.poetry/bin:${PATH}"  # poetry
