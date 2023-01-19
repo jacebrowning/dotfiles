@@ -56,5 +56,4 @@ source $ZSH/oh-my-zsh.sh
 
 . /usr/local/opt/asdf/libexec/asdf.sh
 
-export PATH="${HOME}/.local/bin:${PATH}"  # pipx
-export PATH="${HOME}/.poetry/bin:${PATH}"  # poetry
+export PATH="${HOME}/.local/bin:${PATH}"
