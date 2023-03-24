@@ -28,6 +28,8 @@ export ANDROID_HOME=/usr/local/share/android-sdk
 
 . /usr/local/opt/asdf/libexec/asdf.sh
 
+export PATH="${HOME}/.local/bin:${PATH}"
+
 ###############################################################################
 # Program options
 
