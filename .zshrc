@@ -26,6 +26,8 @@ export PATH=$PATH:/usr/local/sbin
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
 export ANDROID_HOME=/usr/local/share/android-sdk
 
+. /usr/local/opt/asdf/libexec/asdf.sh
+
 ###############################################################################
 # Program options
 
@@ -50,10 +52,3 @@ alias dcl="docker-compose logs -f --tail=100 web worker"
 fpath+=~/.zfunc
 
 source $ZSH/oh-my-zsh.sh
-
-###############################################################################
-# Extra scripts
-
-. /usr/local/opt/asdf/libexec/asdf.sh
-
-export PATH="${HOME}/.local/bin:${PATH}"

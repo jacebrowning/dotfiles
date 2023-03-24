@@ -5,6 +5,7 @@ DOTFILE_NAMES := \
 	.gitconfig-diff \
 	.gitconfig-aliases \
 	.gitignore_global \
+	.tool-versions \
 
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DOTFILE_PATHS := $(DOTFILE_NAMES:%=$(ROOT_DIR)/%)
