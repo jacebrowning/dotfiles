@@ -1,6 +1,8 @@
 DOTFILE_NAMES := \
 	.zshrc \
 	.gitconfig \
+	.gitconfig-personal \
+	.gitconfig-zapier \
 	.gitconfig-core \
 	.gitconfig-diff \
 	.gitconfig-aliases \

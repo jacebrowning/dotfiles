@@ -1,11 +1,12 @@
+[includeIf "gitdir:~/"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/Code/zapier/"]
+  path = ~/.gitconfig-zapier
+
 [include]
 	path = ~/.gitconfig-core
 	path = ~/.gitconfig-diff
 	path = ~/.gitconfig-aliases
-
-[user]
-	name = Jace Browning
-	email = jacebrowning@gmail.com
 
 [init]
 	defaultBranch = main
