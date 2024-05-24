@@ -1,3 +1,13 @@
 [user]
 	name = Jace Browning
 	email = jacebrowning@gmail.com
+  	signingkey = ~/.ssh/id_rsa
+
+[gpg]
+  	format = ssh
+
+[commit]
+  	gpgsign = true
+
+[tag]
+  	gpgSign = true
