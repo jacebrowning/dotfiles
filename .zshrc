@@ -27,6 +27,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Hom
 export ANDROID_HOME=/usr/local/share/android-sdk
 
 . $(brew --prefix asdf)/libexec/asdf.sh
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 
 export PATH="${HOME}/.local/bin:${PATH}"
 
