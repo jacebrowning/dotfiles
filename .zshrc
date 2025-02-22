@@ -26,7 +26,7 @@ export PATH=$PATH:/usr/local/sbin
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
 export ANDROID_HOME=/usr/local/share/android-sdk
 
-. $(brew --prefix asdf)/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 
 export PATH="${HOME}/.local/bin:${PATH}"
