@@ -31,6 +31,11 @@ export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 
 export PATH="${HOME}/.local/bin:${PATH}"
 
+# Vulkan SDK for Zoo Engine development
+export VULKAN_SDK="$HOME/.local/vulkan-sdk"
+export VK_ICD_FILENAMES="$(brew --prefix molten-vk)/share/vulkan/icd.d/MoltenVK_icd.json"
+export DYLD_LIBRARY_PATH="$HOME/.local/lib:$VULKAN_SDK/lib:$(brew --prefix vulkan-loader)/lib:$DYLD_LIBRARY_PATH"
+
 ###############################################################################
 # Program options
 
